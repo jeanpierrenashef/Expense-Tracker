@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="../styles/home.css" rel="stylesheet"/>
+    <link href="../styles/base.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <section class="bar">
+        <div class="logo">
+            <img src="./assets/icons/logo.png">
+        </div>
+        <h1>Expense Tracker</h1>
+        <div></div>
+    </section>
+    <section class="summary">
+        <h2>Summary</h2>
+        <div class="net-total">
+            <h4>Net Total</h4>
+            <p id="total-amount"></p>
+        </div>
+    </section>
+    <section class="transactions">
+        <div class="upper-section">
+            <div id="filters">
+                <h3>Filter Transactions</h3>
+                <input type="number" id="min-price" placeholder="Min Amount">
+                <input type="number" id="max-price" placeholder="Max Amount">
+                <select id="type-filter">
+                    <option value="type-income">Income</option>
+                    <option value="type-expense">Expense</option>
+                </select>
+                <input type="date" id="date-filter">
+                <input type="text" id="notes-filter" placeholder="Notes">
+                <button id="add-filter-btn">Apply Filters</button>
+                <button id="add-filter-btn">Clear Filters</button>
+            </div>
+            <h2>Transactions</h2>
+            <div></div>
+        </div>
+        <div class="input-section">
+            <select id="type-select">
+                <option disabled selected value="">Income/Expense</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+    
+            <select id="category-select">
+                <option disabled selected value="">Select a Category</option>
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Rent">Rent</option>
+                <option value="Transport">Transport</option>
+                <option value="Relaxing">Relaxing</option>
+            </select>
+    
+            <input type="number" id="amount-input" class="amount-input" placeholder="Amount">
+    
+            <input type="date" id="date-input">
+    
+            <input type="text" id="notes-input" class="notes-input" placeholder="Notes">
+            <button id="add-transactions-btn" class="add-button">Add Transaction</button>
+        </div>
+        <div class="table-container" >  
+            <table id="table-container">
+                    <tr>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Notes</th>
+                        <th>Modify</th>
+                    </tr>
+            </table>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../scripts/transactions.js"></script>
+</body>
+</html>

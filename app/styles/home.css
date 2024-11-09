@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: rgba(104, 196, 142, 0.8);;
+    width: 100%;
+}
+.logo > img{
+    width: auto;      
+    height: 100px;     
+    padding: 5px;  
+}
+.bar > h1{
+
+    font-size: 32px;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.transactions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.transactions div{
+    width: 100%;
+}
+.upper-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-section{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.amount-input{
+    border: 1px solid black;
+}
+.notes-input{
+    border: 1px solid black;
+}
+.add-button{
+    background-color: #0d0c22;
+    color: white;
+    height: 35px;
+    padding: 0 25px;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.add-button:hover {
+    opacity: 0.7;
+    }
+.table-container{
+    margin:20px;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    border:1px solid rgb(13, 22, 15);
+    padding: 8px;
+    text-align: left;
+    width: 20%;
+}
+th {
+    background-color: white;
+    color: rgb(104, 196, 142);
+}
+
+tfoot td {
+    font-weight: bold;
+}
+.edit-button{
+    background-color: rgb(104, 196, 142);
+    color: white;
+    height: 20px;
+    padding: 0 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.delete-button{
+    background-color: rgb(104, 196, 142);
+    color: rgb(209, 32, 32);
+    height: 20px;
+    padding: 0 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+
+}
